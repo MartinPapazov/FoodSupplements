@@ -1,0 +1,299 @@
+#wrapper {
+	width: 1000px;
+	margin: 0 auto;
+	min-height: 2000px;
+}
+
+.horizontal-nav {
+	margin: 0 auto;
+	background: #efefef;
+	border-radius: 6px;
+}
+
+.horizontal-nav ul {
+	background: #128F9A;
+	float: left;
+	text-align: center;
+	border-radius: 6px;
+	border: 1px solid #0e7079;
+}
+
+.horizontal-nav ul li {
+	float: left;
+	border-left: 1px solid #0e7079;
+}
+
+.horizontal-nav ul li:first-child {
+	border-left: 0 none;
+}
+
+.horizontal-nav ul li a {
+	display: block;
+	padding: 10px 20px;
+	color: #fff;
+	border-top: 1px solid rgba(255, 255, 255, 0.25);
+	border-left: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+.horizontal-nav ul li:first-child a {
+	border-left: 0 none;
+}
+
+.horizontal-nav ul li a:hover {
+	background: #12808a;
+}
+
+.horizontal-nav ul li:first-child a {
+	border-top-left-radius: 6px;
+	border-bottom-left-radius: 6px;
+}
+
+.horizontal-nav ul li:last-child a {
+	border-top-right-radius: 6px;
+	border-bottom-right-radius: 6px;
+}
+
+.tab {
+	padding-top: 100px;
+}
+
+table {
+	border-collapse: collapse;
+	width: 100%;
+}
+
+th, td {
+	padding: 8px;
+	text-align: left;
+	border-bottom: 1px solid #ddd;
+}
+
+#subcategory_table>tr:hover, #category_table>tr:hover, #brand_table>tr:hover,
+	#product_table>tr:hover, #product_taste_table>tr:hover {
+	background-color: #c4caff;
+}
+
+.title {
+	text-align: center;
+	padding: 5px;
+	font-family: "Times New Roman", Times, serif;
+	font-size: 35px;
+	font-weight: bold;
+}
+
+.table_panel {
+	margin: 0 auto;
+	width: 90%;
+	height: 300px;
+	padding: 20px;
+	border-style: groove;
+	overflow-y: auto;
+}
+
+.warning {
+	border-color: red;
+}
+
+#brand_image>img {
+	width: 300px;
+	height: 300px;
+}
+
+#brand_image {
+	margin-top: 5%;
+	margin-right: 8px;;
+	float: right;
+}
+
+#brand_details>#info {
+	width: 660px;
+	height: 380px;
+	float: left;
+	margin: 10px;
+}
+
+#brand_details>#info>#info_name {
+	float: left;
+	width: 600px;
+}
+
+#brand_details>#info>#info_name p:first-child {
+	float: left;
+	margin-right: 15px;
+}
+
+#brand_details {
+	margin-bottom: 20px;
+	margin-top: 20px;
+	height: 400px;
+	border: 2px solid;
+}
+
+#brand_desc {
+	word-wrap: break-word;
+	width: 650px;
+	height: 290px;
+	margin-left: 8px;
+}
+
+.remove_button, #change_button {
+	width: 18px;
+	height: 20px;
+	margin-right: 10px;
+}
+
+.remove_button {
+	background-image: url("../img/recycle.png");
+	background-size: 18px 20px;
+	background-repeat: no-repeat;
+}
+
+#change_button {
+	background-color: yellow;
+}
+
+.remove_button:hover, #change_button:hover {
+	opacity: 0.4;
+}
+
+#product_info {
+	margin-top: 20px;
+	padding: 10px;
+	border: 2px groove #e6e6ff;
+}
+
+.product_info_short {
+	height: 840px;
+}
+
+.product_info_wide {
+	height: 1155px;
+}
+
+#product_info>div  select {
+	width: 300px;
+}
+
+#product_image {
+	margin-top: -7%;
+	margin-right: 8px;;
+	float: right;
+	width: 300px;
+	height: 300px;
+	border: 2px groove #e6e6ff;
+}
+
+#product_image>img {
+	width: 300px;
+	height: 300px;
+}
+
+#detail_info_panel {
+	height: 280px;
+	padding: 10px;
+	border: 2px groove #e6e6ff;
+	float: right;
+	margin-right: 15px;
+	margin-top: -270px;
+}
+
+#subc, #brand {
+	margin: 10px;
+	margin-top: 40px;
+	width: 300px;
+}
+
+#desc, #suppl {
+	margin-left: 34px;
+	float: left;
+}
+
+#name>input {
+	width: 300px;
+}
+
+#reload_products {
+	margin-top: 20px;
+	margin-left: 25px;
+}
+
+#detail_info_add {
+	height: 295px;
+	width: 300px;
+	padding: 10px;
+	border: 2px groove #e6e6ff;
+	float: left;
+	margin-top: 0px;
+	margin-left: 325px;
+}
+
+#detail_info_add>input:last-of-type {
+	margin-top: 10px;
+}
+
+#detail_info_panel>button {
+	margin-top: 20px;
+	float: left;
+	margin-left: 15px;
+}
+
+#detail_info_add>button {
+	display: block;
+	margin: auto;
+	margin-top: 17px;
+}
+
+#add_products {
+	border: 2px groove #e6e6ff;
+	padding: 15px;
+	margin-top: 10px;
+}
+
+#add_products>select, #add_products>input {
+	width: 300px;
+	margin-bottom: 20px;
+	margin-top: 2px;
+}
+
+#add_products>p, #product_info>p {
+	margin-top: -10px;
+	text-align: center;
+	font-weight: bold;
+	color: #101b7f;
+}
+
+ 
+
+#add_products>.taste_prd_add {
+	float: right;
+	margin-top: -10px;
+}
+
+#product_info .taste_prd_add {
+	position: relative;
+  left: 4px;
+	width: 260px;
+	height: 275px;
+}
+
+#show_taste_prd {
+	margin-top: 10px;
+	margin-left: 10px;
+}
+
+#add_products > .text_area_prd_add {
+	display: inline-block;
+}
+
+#left_taste_product {
+	margin-top: 10px;
+	width: 220px;
+}  
+
+#send_upload_product {
+	float:right;
+	width: 200px;
+	height: 40px;
+	margin-top: -90px;
+	margin-right: 100px;
+}
