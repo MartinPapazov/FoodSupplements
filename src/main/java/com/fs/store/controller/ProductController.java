@@ -80,7 +80,9 @@ public class ProductController {
 	{
 
 		ProductDetails details = new ProductDetails();
-		details.setProductId(Integer.parseInt(productId));
+		Product product = new Product();
+		product.setId(Integer.parseInt(productId));
+		details.setProduct(product);
 		try {
 			details.setQuantity(new String (quantity.getBytes("iso-8859-1"), "UTF-8"));
 		} catch (UnsupportedEncodingException e1) {

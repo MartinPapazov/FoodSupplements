@@ -17,12 +17,12 @@ public class OrderPerProduct {
 	@Column(name = DatabaseConstants.ID)
 	private int id;
 	
-	@ManyToOne
-	@JoinColumn(name = DatabaseConstants.ORDER)
-	private Order order;
+//	@ManyToOne
+//	@JoinColumn(name = DatabaseConstants.ORDER)
+//	private Order order;
 	
 	@ManyToOne
-	@JoinColumn(name = DatabaseConstants.PRODUCT_ID)
+	@JoinColumn(name = DatabaseConstants.PRODUCT_DETAILS_ID)
 	private Product product;
 	
 	@Column(name = DatabaseConstants.QUANTITY)
@@ -30,6 +30,7 @@ public class OrderPerProduct {
 	
 	@Column(name = DatabaseConstants.PRICE)
 	private double price;
+	
 
 	public int getId() {
 		return id;
@@ -38,14 +39,14 @@ public class OrderPerProduct {
 	public void setId(int id) {
 		this.id = id;
 	}
-
-	public Order getOrder() {
-		return order;
-	}
-
-	public void setOrder(Order order) {
-		this.order = order;
-	}
+//
+//	public Order getOrder() {
+//		return order;
+//	}
+//
+//	public void setOrder(Order order) {
+//		this.order = order;
+//	}
 
 	public Product getProduct() {
 		return product;

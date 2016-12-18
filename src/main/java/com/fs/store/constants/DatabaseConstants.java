@@ -68,6 +68,10 @@ public class DatabaseConstants {
 	public static final String PRICE = "price";
 
 	public static final String PRODUCT_PER_TASTE = "product_per_taste";
+
+	public static final String FULL_PRICE = "full_price";
+
+	public static final String PRODUCT_DETAILS_ID = "product_details_id";
 	
 
 }

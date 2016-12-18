@@ -17,8 +17,10 @@ public class ProductDetails {
 	@Column(name = DatabaseConstants.ID)
 	private int id;
 	
-	@Column(name = DatabaseConstants.PRODUCT_ID)
-	private int productId;
+	
+	@ManyToOne
+	@JoinColumn(name = DatabaseConstants.PRODUCT_ID)
+	private Product product;
 	
 	@Column(name = DatabaseConstants.QUANTITY)
 	private String quantity;
@@ -40,12 +42,12 @@ public class ProductDetails {
 		this.id = id;
 	}
 
-	public int getProductId() {
-		return productId;
+	public Product getProduct() {
+		return product;
 	}
 
-	public void setProductId(int productId) {
-		this.productId = productId;
+	public void setProduct(Product product) {
+		this.product = product;
 	}
 
 	public String getQuantity() {
