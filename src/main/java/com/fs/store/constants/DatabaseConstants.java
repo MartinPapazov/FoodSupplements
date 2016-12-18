@@ -61,7 +61,8 @@ public class DatabaseConstants {
 	public static final String SUBCATEGORY = "subcategory";
 	public static final String CATEGORY_ID = "category_id";
 	public static final String CATEGORY = "category";
-	public static final String ORDER = "order";
+	public static final String ORDER = "orders";	
+	public static final String ORDER_ID = "order_id";
 
 	public static final String CUSTOMER_ID = "customer_id";
 	public static final String ORDER_PER_PRODUCT = "order_per_product";
@@ -72,6 +73,8 @@ public class DatabaseConstants {
 	public static final String FULL_PRICE = "full_price";
 
 	public static final String PRODUCT_DETAILS_ID = "product_details_id";
+
+
 	
 
 }

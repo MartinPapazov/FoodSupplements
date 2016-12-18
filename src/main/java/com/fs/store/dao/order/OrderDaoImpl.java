@@ -28,7 +28,7 @@ public class OrderDaoImpl implements OrderDao {
 
 	@Override
 	public List<Order> getAllOrders() {
-		logger.info("Getting all orders");
+		logger.info("Getting all orders..");
 		Session session = sessionFactory.openSession();
 		Criteria criteria = session.createCriteria(Order.class);
 

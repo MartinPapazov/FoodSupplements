@@ -21,7 +21,11 @@ public class OrderController {
 	
 	@RequestMapping(value = UrlConstants.ALL_ORDERS, method = RequestMethod.GET)
 	public @ResponseBody List<Order> getAllOrders() {
-		return service.getAllOrders();
+		List<Order> orders = service.getAllOrders();
+		
+//		
+
+		return orders; 
 	}
 	
 	@RequestMapping(value = UrlConstants.ORDER_BY_ID, method = RequestMethod.POST)

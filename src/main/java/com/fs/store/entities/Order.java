@@ -36,9 +36,8 @@ public class Order {
 	@Column(name = DatabaseConstants.FULL_PRICE)
 	private double fullPrice;
 	
-	@OneToMany(cascade={CascadeType.ALL})
-	@JoinColumn(name="order_id")
-	private Set<OrderPerProduct> products;
+	@OneToMany(mappedBy="order")
+	private Set<OrderPerProduct> orderPerProduct;
 	
 	public int getId() {
 		return id;
@@ -78,5 +77,13 @@ public class Order {
 
 	public void setFullPrice(double fullPrice) {
 		this.fullPrice = fullPrice;
+	}
+
+	public Set<OrderPerProduct> getOrderPerProduct() {
+		return orderPerProduct;
+	}
+
+	public void setOrderPerProduct(Set<OrderPerProduct> orderPerProduct) {
+		this.orderPerProduct = orderPerProduct;
 	}
 }

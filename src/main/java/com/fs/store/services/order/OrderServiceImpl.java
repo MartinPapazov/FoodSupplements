@@ -1,24 +1,29 @@
 package com.fs.store.services.order;
 
 import java.util.List;
+import java.util.Set;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.fs.store.dao.order.OrderDao;
-import com.fs.store.dao.product.ProductDao;
 import com.fs.store.entities.Order;
+import com.fs.store.entities.OrderPerProduct;
 import com.fs.store.entities.Status;
 
 @Service
-public class OrderServiceImpl implements OrderService{
+public class OrderServiceImpl implements OrderService {
 
 	@Autowired
 	private OrderDao dao;
-	
+
 	@Override
 	public List<Order> getAllOrders() {
-		return this.dao.getAllOrders();
+		List<Order> orders = this.dao.getAllOrders();
+
+		removeUnusedFields(orders);
+
+		return orders;
 	}
 
 	@Override
@@ -61,4 +66,16 @@ public class OrderServiceImpl implements OrderService{
 		return this.dao.orderStatusChanged(status);
 	}
 
+	private void removeUnusedFields(List<Order> orders) {
+		for (Order order : orders) {
+			removeProductImage(order);
+		}
+	}
+
+	private void removeProductImage(Order order) {
+		Set<OrderPerProduct> ordersPerProducts = order.getOrderPerProduct();
+		for (OrderPerProduct orderPerProduct : ordersPerProducts) {
+			orderPerProduct.getProductDetails().setImage(null);
+		}
+	}
 }
