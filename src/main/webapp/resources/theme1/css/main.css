@@ -69,7 +69,7 @@ th, td {
 }
 
 #subcategory_table>tr:hover, #category_table>tr:hover, #brand_table>tr:hover,
-	#product_table>tr:hover, #product_taste_table>tr:hover {
+	#product_table>tr:hover, #product_taste_table>tr:hover, #order_table>tr:hover {
 	background-color: #c4caff;
 }
 

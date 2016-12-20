@@ -10,9 +10,14 @@
 				<td>Option</td>
 			</tr>
 		</thead>
-		<tbody id="category_table">
+		<tbody id="order_table">
 		</tbody>
 	</table>
 </div>
 
 <button id="reload_orders">Load orders</button>
+
+<div>
+
+	
+</div>

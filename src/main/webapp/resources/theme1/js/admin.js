@@ -208,7 +208,6 @@ function closeAll() {
 }
 
 function setCssToTableRow(tableName) {
-	console.log("ROW EVENT set");
 	$(tableName + ">tr>td:not(:last-child)").unbind().click(function() {
 		markRow(tableName, this);
 	});
@@ -217,7 +216,6 @@ function setCssToTableRow(tableName) {
 function markRow(tableName, element) {
 	$(tableName + ">tr").css("background-color", "");
 	$($($(element).parent()).get(0)).css("background-color", "#c4caff");
-	console.log($($($(element).parent()).get(0)).text());
 }
 
 function setEventHandlerBrands() {
@@ -334,7 +332,6 @@ function toggleAddQuantity() {
 function uploadCategoryOption() {
 	$("#options_category>option").remove();
 	$.get(domainUrl + "category/all", function(response) {
-		console.log("Loading all subcategories via ajax");
 		for (var i = 0; i < response.length; i++) {
 			var category = response[i];
 			$("#options_category").append(
